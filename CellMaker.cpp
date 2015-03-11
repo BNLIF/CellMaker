@@ -41,7 +41,7 @@
 
 using namespace std;
 
-const Double_t heightToWidthRatio = 0.25;
+const Double_t heightToWidthRatio = 0.50;
 const Double_t wirePitch = 0.30; // in cm
 const Double_t firstYWireUoffsetYval = 0.00; // in cm
 const Double_t firstYWireVoffsetYval = 0.00; // in cm
@@ -99,9 +99,9 @@ Int_t main(Int_t argc, Char_t** argv)
 
   // Get input parameters
   if(argc > 1)
-    angleU = (Int_t) atoi(argv[1]);
+    angleU = (Double_t) atof(argv[1]);
   if(argc > 2)
-    angleV = (Int_t) atoi(argv[2]);
+    angleV = (Double_t) atof(argv[2]);
   if(argc > 3)
     numYWires = (Int_t) atoi(argv[3]);
   if(argc > 4)
