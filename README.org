@@ -20,9 +20,9 @@ After making modifications to the =const= parameters in =CellMaker.cpp= to repre
 1. (=Double_t=) The angle of the U wires with respect to the Y wires (positive, 0 to 90 degrees)
 2. (=Double_t=) The angle of the V wires with respect to the Y wires (also positive, 0 to 90 degrees)
 3. (=Int_t=) The total number of Y wires
-4. (=Int_t=) Whether or not to make a plot for visualization of cell map (0 for no, 1 for yes)
+4. (=Int_t=) Visualization mode for illustrating cell map (0 for no visualization, 1 for visualization of geometry, 2 for visualization of cells with real hits, and 3 for visualization of real hits, fake hits, and wires with non-zero charge)
 
-If parameter #4 is set to =1=, then a =.png= file will be created.  As an example, to create a cell map with the U and V wires at 60 degrees with respect to the Y wires, with 30 Y wires in total, and outputting a plot visualizing the cell map, run the following command:
+If parameter #4 is set to anything but =0=, then a =.png= file will be created.  As an example, to create a cell map with the U and V wires at 60 degrees with respect to the Y wires, with 30 Y wires in total, and outputting a plot visualizing the cell map, run the following command:
 
 #+BEGIN_EXAMPLE
   $ ./CellMaker 60 60 30 1
