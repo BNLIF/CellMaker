@@ -28,14 +28,20 @@ If parameter #4 is set to anything but =0=, then a =.png= file will be created. 
   $ ./CellMaker 60 60 30 1
 #+END_EXAMPLE
 
-* MicroBooNE Example
+Using values of =2= or =3= for parameter #4 will deposit charge randomly in the cell diagram (weighted by the area of the cell).  For plot mode =3=, green cells represent real hits, red cells represent fake hits, and blue lines represent wires with non-zero charge.  The brightness of each represents the magnitude of the charge of the hit/wire (for fake hits, this is calculated by the average charge of the three associated wires).
+
+* MicroBooNE Geometry Example
 
 [[file:cellDiagram_MicroBooNE.png]]
 
-* LBNE 35t Example
+* LBNE 35t Geometry Example
 
 [[file:cellDiagram_LBNE35t.png]]
 
-* LBNE 10kt Example
+* LBNE 10kt Geometry Example
 
 [[file:cellDiagram_LBNE10kt.png]]
+
+* MicroBooNE Real/Fake Hits Example
+
+[[file:cellDiagram_MicroBooNE_plotMode3.png]]
